@@ -33,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
 }
 
 dependencies {
@@ -45,4 +50,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.runtime.permission) //for runtime permission
+    implementation(libs.glide) //show images
+    debugImplementation(libs.debug.db) //view database
+    implementation(libs.androidx.lifecycle.viewmodel.ktx) //for viewModelScope
+    implementation(libs.androidx.lifecycle.runtime.ktx) //for LifecycleScope
+
+
+
+
+
+
+
 }
