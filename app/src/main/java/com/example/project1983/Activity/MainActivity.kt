@@ -32,8 +32,7 @@ class MainActivity : AppCompatActivity() {
     private fun initCategory() {
         binding.progressBarCategory.visibility= View.VISIBLE
             viewModel.category.observe(this, Observer {
-                binding.viewCategory.layoutManager =
-                    LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
+                binding.viewCategory.layoutManager=LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
                 binding.viewCategory.adapter=CategoryAdapter(it)
                 binding.progressBarCategory.visibility = View.GONE
             })
