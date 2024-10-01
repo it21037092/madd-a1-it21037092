@@ -5,5 +5,5 @@ import android.graphics.Picture
 data class CategoryModel(
     val Id:Int=0,
     val Name:String="",
-    val picture: String=""
+    val Picture: String=""
 )

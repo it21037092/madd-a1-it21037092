@@ -24,7 +24,7 @@ class CategoryAdapter(val items:MutableList<CategoryModel>):RecyclerView.Adapter
         holder.binding.titleTxt.text = item.Name
 
         Glide.with(context)
-            .load(item.picture)
+            .load(item.Picture)
             .into(holder.binding.img)
     }
 
